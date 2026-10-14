@@ -260,3 +260,7 @@ td, th {
 .table-01 tfoot {
   font-weight: 700;
 }
+
+.hide-border {
+  border-bottom-color: transparent;
+}
