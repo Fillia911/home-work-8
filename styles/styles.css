@@ -30,21 +30,25 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 20px;
+  margin-bottom: 20px;
   color: var(--white);
   text-align: center;
 }
 
 p {
-  margin: 0 0 15px;
+  margin-bottom: 15px;
 }
 
 ul,
 ol {
-  margin: 0 0 15px;
+  margin-bottom: 15px;
   padding: 30px;
   border: 1px dashed oklch(from var(--gray) l c h / 0.5);
   border-radius: calc(var(--border-radius) / 2);
+}
+
+:where(ul, ol) li + li {
+  margin-top: 5px;
 }
 
 a {
@@ -70,15 +74,16 @@ body {
 }
 
 .container {
-  padding-inline: max(20px, calc(50% - (var(--container-width, 1000px) / 2)));
+  max-width: var(--container-width);
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 section {
-  margin-bottom: 50px;
+  padding-block: 50px;
 }
 
 section:where([class*="--bg"]) {
-  padding-block: 50px;
   background: #18202b;
 }
 
@@ -188,7 +193,7 @@ form input:checked {
 }
 
 .showcase-list li + li {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .showcase-list > li:nth-child(even) {
