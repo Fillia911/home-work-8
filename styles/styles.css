@@ -47,8 +47,8 @@ ol {
   border-radius: calc(var(--border-radius) / 2);
 }
 
-:where(ul, ol) li + li {
-  margin-top: 5px;
+:where(ul, ol) li:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 a {
@@ -192,8 +192,8 @@ form input:checked {
   border: none;
 }
 
-.showcase-list li + li {
-  margin-top: 10px;
+.showcase-list li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .showcase-list > li:nth-child(even) {
